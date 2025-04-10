@@ -1,0 +1,17 @@
+git config --global user.name melana123
+git config --global user.email melana.etec@gmail.com
+
+criar projeto 1 vez só
+npx create-expo-app@latest Adivinhacao --template blank
+
+cd Adivinhacao
+npm i
+
+
+npm run reset-project
+
+executar na web
+npx expo start --web
+
+Executar o projeto no cel
+npx expo start --localhost --android
