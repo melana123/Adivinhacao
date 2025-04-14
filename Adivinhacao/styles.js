@@ -1,4 +1,4 @@
-// styles.js
+
 import { StyleSheet } from 'react-native';
 
 export default StyleSheet.create({
@@ -6,7 +6,7 @@ export default StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     padding: 20,
-    backgroundColor: '#f5f5f5',
+    backgroundColor:'#F0FFFF',
   },
   titulo: {
     fontSize: 24,
@@ -23,7 +23,7 @@ export default StyleSheet.create({
     backgroundColor: '#fff',
   },
   botao: {
-    backgroundColor: '#4CAF50',
+    backgroundColor: '#6495ED',
     padding: 12,
     borderRadius: 8,
     alignItems: 'center',

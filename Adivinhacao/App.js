@@ -37,7 +37,7 @@ export default function App() {
       setMensagem(numero < numeroSecreto ? 'Tente um número maior!' : 'Tente um número menor!');
 
       if (novasTentativas === 0) {
-        Alert.alert('Fim de jogo', `Você perdeu! O número era ${numeroSecreto}`, [
+        Alert.alert('Fim de jogo', `Perdeu! O número era ${numeroSecreto}`, [
           { text: 'Tentar de novo', onPress: reiniciarJogo },
         ]);
       }
@@ -48,18 +48,18 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.titulo}>Qual o número de 0 a 100?</Text>
+      <Text style={styles.titulo}>Adivinhe o número de 0 a 100</Text>
 
       <TextInput
         style={styles.input}
         keyboardType="numeric"
-        placeholder="Digite seu palpite"
+        placeholder="Digite aqui"
         value={palpite}
         onChangeText={setPalpite}
       />
 
       <TouchableOpacity style={styles.botao} onPress={verificarPalpite}>
-        <Text style={styles.textoBotao}>Verifica</Text>
+        <Text style={styles.textoBotao}>Verificar</Text>
       </TouchableOpacity>
 
       <Text style={styles.mensagem}>{mensagem}</Text>
